@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package interfaces;
+
+/**
+ *
+ * @author leodeveloper
+ */
+public class Producto implements Pagable {
+    
+    /*
+    Producto vendible.
+   */
+
+   private String nombre;
+
+   private double precio;
+
+   /*
+    Constructor principal.
+   */
+   public Producto(
+           String nombre,
+           double precio) {
+
+       this.nombre = nombre;
+       this.precio = precio;
+   }
+
+   @Override
+   public double calcularTotal() {
+
+       return precio;
+   }
+
+   public String getNombre() {
+
+       return nombre;
+   }
+
+   public double getPrecio() {
+
+       return precio;
+   }
+    
+}
